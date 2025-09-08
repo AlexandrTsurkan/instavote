@@ -24,7 +24,5 @@ commonAnnotations:
   supported-by: "Alexandr Tsurkan"
 
 configMapGenerator:
-  - name: vote
-    literals:
-      - OPTION_A=STAGING
-      - OPTION_B=DEV
+  - name: vote-options
+    env: options.env
