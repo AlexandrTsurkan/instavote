@@ -11,9 +11,9 @@ spec:
   template:
     spec:
       containers:
-      - image: schoolofdevops/vote:v3
-        name: vote
+      - name: vote
+        image: schoolofdevops/vote:v3
         envFrom:
         - configMapRef:
-          name: vote-options
-          optional: true
+            name: vote-options
+            optional: true
